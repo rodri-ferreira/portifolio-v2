@@ -1,0 +1,81 @@
+.sobre-mim {
+    background-color: $corPrincipalLight;
+
+    .sobre-mim_div {
+        padding: 20px 0;
+        @include flex(space-evenly, center);
+        .sobre-mim_img {
+            display: block;
+            width: 35%;
+            min-width: 250px;
+        }
+
+        .sobre-mim_conteudo {
+            @include flex(center, center);
+            flex-direction: column;
+            width: 40%;
+            gap: 40px;
+
+            .sobre-mim_subtitulo {
+                font-size: 30px;
+                padding-bottom: 0;
+            }
+            
+            .sobre-mim_texto {
+                width: 100%;
+                text-align: justify;
+                align-self: flex-start;
+            }
+
+            .sobre-mim_icons {
+                @include flex(space-between, center);
+                align-self: flex-start;
+                width: 390px;
+
+                .divisao-icons {
+                    p {
+                        padding: 5px 0;
+                        font-size: 14px; 
+                    }
+                }
+            }
+
+            .btn-sobre_mim {
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .sobre-mim {
+        .sobre-mim_div {
+            justify-content: space-around;
+
+            .sobre-mim_conteudo {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sobre-mim {
+        .sobre-mim_div {
+            justify-content: space-around;
+
+            .sobre-mim_img {
+                display: none;
+            }
+
+            .sobre-mim_conteudo {
+                width: 90%;
+
+                .sobre-mim_icons {
+                    width: 100%;
+                    align-self: center;
+                }
+            }
+        }
+    }
+}

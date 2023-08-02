@@ -1,0 +1,128 @@
+.inicial {
+    padding: 70px 100px 0 40px;
+    width: 100%;
+    height: 100vh;
+    @include flex(space-between, center);
+
+    .inicial-texto-icons {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        width: 65%;
+    }
+
+    .inicial-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        width: 125px;
+        i {
+            font-size: 25px;
+            cursor: pointer;
+        }
+    }
+
+    .inicial-texto {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+
+        #icon-arrow {
+            font-size: 40px;
+            padding-left: 200px;    
+        }
+
+        .inicial-texto-titulo {
+            font-size: 56px;
+        }
+
+        .texto-paragrafo {
+            width: 100%;
+            font-size: 18px;
+        }
+    }
+
+    .inicial-foto {
+        display: block;
+        width: 35%;
+        height: 85%;
+    }
+}
+
+main {
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 992px) {
+    .inicial {
+        padding: 70px 50px 0px 20px;
+
+        .inicial-texto {
+            gap: 25px;
+
+            .inicial-texto-titulo {
+                font-size: 46px ;
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    .inicial {
+        padding: 30px 10px 0px 10px;
+
+        .inicial-texto-icons {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .inicial-icons {
+            flex-direction: row;
+            width: auto;
+            i {
+                font-size: 35px;
+            }
+        }
+
+        .inicial-texto {
+            width: 100%;
+          
+            .inicial-texto-titulo {
+                text-align: center;
+                width: 100%;
+            }
+
+            .texto-paragrafo {
+                text-align: center;
+            }
+
+            .btn-inicial {
+                margin: 0 auto;
+            }
+
+            #icon-arrow {
+                margin: 0 auto;
+                padding: 0;
+            }
+        }
+
+        .inicial-foto{
+            position: fixed;
+            width: 70%;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity:0.2;
+        }
+    }
+}
+
+@media screen and (max-height: 569px) {
+    .inicial {
+        padding: 200px 10px 0px 10px;
+    }
+} 

@@ -1,0 +1,70 @@
+/*Importacoes*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+/*Importacoes*/
+
+/*variaveis*/
+$corPrincipalLight: #ffffff;
+$corPrincipalDark: #222222;
+$corPrincipalTexto: #3d3d3d;
+
+/*variaveis*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;  
+    border: none;
+    color: $corPrincipalTexto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    padding: 5px;
+    background-color: $corPrincipalLight;
+}
+
+@mixin flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.ativar-menu {
+    height: 245px !important;
+    transition: 0.5s;
+}
+
+.btn-padrao {
+    padding: 5px 10px;
+    border: 1px solid $corPrincipalTexto;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: $corPrincipalTexto;
+        color: $corPrincipalLight;
+    }
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 36px;
+    padding: 20px 0;
+}
+
+@import './header';
+@import './section-Inicial';
+@import './sobre-mim';

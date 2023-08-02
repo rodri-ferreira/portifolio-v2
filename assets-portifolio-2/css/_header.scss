@@ -1,0 +1,65 @@
+header {
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    @include flex(space-around, center);
+    padding-top: 10px;
+
+    .header-logo img{
+        display: block;
+        width: 100px;
+        cursor: pointer;
+    }
+
+    .header-nav {
+        @include flex(space-around, center);
+        gap: 40px;
+        
+        .header-nav-ul {
+            @include flex(space-around, center);
+            gap: 25px;
+
+            .header-ul-a {
+                text-transform: uppercase;
+            }
+        }
+
+        .header-btn_escuro, .header-btn_menu {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .header-btn_menu {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: auto;
+        .header-nav {
+            .header-btn_menu {
+                display: block;
+            }
+
+            .header-nav-ul {
+                position: absolute;
+                display: block;
+                height: 0px;
+                top: 65px;
+                left: 0;
+                width: 100vw;
+                text-align: center;
+                padding: 0px;
+                overflow: hidden;
+                transition: 0.5s;
+                
+                .header-ul-a {
+                    display: block;
+                    padding: 10px;
+                }
+            }
+        }
+    } 
+}
