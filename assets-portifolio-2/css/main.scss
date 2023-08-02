@@ -63,8 +63,18 @@ button {
     text-align: center;
     font-size: 36px;
     padding: 20px 0;
+    background-color: $corPrincipalLight;
+}
+
+.subtitulo-h3 {
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 0 40px 0;
+    font-weight: normal;
+    background-color: $corPrincipalLight;
 }
 
 @import './header';
 @import './section-Inicial';
 @import './sobre-mim';
+@import './carrossel-habilidades';

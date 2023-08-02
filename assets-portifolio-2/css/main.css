@@ -50,6 +50,15 @@ button {
   text-align: center;
   font-size: 36px;
   padding: 20px 0;
+  background-color: #ffffff;
+}
+
+.subtitulo-h3 {
+  text-align: center;
+  font-size: 16px;
+  padding: 20px 0 40px 0;
+  font-weight: normal;
+  background-color: #ffffff;
 }
 
 header {
@@ -291,5 +300,144 @@ main {
   .sobre-mim .sobre-mim_div .sobre-mim_conteudo .sobre-mim_icons {
     width: 100%;
     align-self: center;
+  }
+}
+.carrossel-habilidades {
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.carrossel-subtitulo {
+  padding-top: 40px;
+  padding-bottom: 0;
+}
+
+.carrossel {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  max-height: 28vw;
+  overflow: hidden;
+}
+.carrossel:before, .carrossel:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  z-index: 3;
+}
+.carrossel:before {
+  left: 0;
+  top: 10%;
+  height: 80%;
+  border-left: 1px solid #222222;
+}
+.carrossel:after {
+  right: 0;
+  top: 10%;
+  height: 80%;
+  border-right: 1px solid #222222;
+}
+.carrossel .carrossel-fluxo {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+}
+.carrossel .carrossel-fluxo .carrossel-card {
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  transition: 1s all ease;
+  border-radius: 10px;
+  border: 1px solid #222222;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.14);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.carrossel .carrossel-fluxo .carrossel-card .card-img {
+  width: 100px;
+}
+.carrossel .carrossel-fluxo .carrossel-card .subtitulo-card {
+  text-align: center;
+}
+.carrossel .carrossel-fluxo .carrossel-card .texto-card {
+  text-align: justify;
+  padding: 0 50px;
+}
+.carrossel .carrossel-fluxo .carrossel-card:nth-child(1) {
+  left: 0;
+  z-index: 1;
+  transform: translateX(-100%) scale(0.8);
+}
+.carrossel .carrossel-fluxo .carrossel-card:nth-child(2) {
+  left: 0;
+  z-index: 2;
+  transform: translateX(-50%) scale(0.8);
+}
+.carrossel .carrossel-fluxo .carrossel-card:nth-child(3) {
+  left: 50%;
+  z-index: 4;
+  transform: translateX(-50%) scale(1);
+}
+.carrossel .carrossel-fluxo .carrossel-card:nth-child(4) {
+  left: 100%;
+  z-index: 2;
+  transform: translateX(-50%) scale(0.8);
+}
+.carrossel .carrossel-fluxo .carrossel-card:nth-child(n+5) {
+  left: 100%;
+  z-index: 1;
+  transform: scale(0.8);
+}
+.carrossel .carrossel-proximo,
+.carrossel .carrossel-anterior {
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+  width: 50%;
+  height: 100%;
+  transform: translateX(-50%) translateY(-50%) scale(0.8);
+  cursor: pointer;
+}
+.carrossel .carrossel-anterior {
+  left: 0;
+}
+.carrossel .carrossel-proximo {
+  left: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .subtitulo-h3 {
+    padding-bottom: 0;
+  }
+  .carrossel {
+    width: 100%;
+    height: 300px;
+    max-height: 100vh;
+  }
+  .carrossel .carrossel-fluxo .carrossel-card {
+    width: 50%;
+    gap: 15px;
+  }
+  .carrossel .carrossel-fluxo .carrossel-card .card-img {
+    width: 70px;
+  }
+  .carrossel .carrossel-fluxo .carrossel-card .texto-card {
+    text-align: center;
+    padding: 0 0px;
   }
 }/*# sourceMappingURL=main.css.map */

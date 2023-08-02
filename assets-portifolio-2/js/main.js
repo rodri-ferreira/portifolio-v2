@@ -32,4 +32,22 @@ const mudarCorHeader = () => {
     }
 }
 
-document.addEventListener('scroll', mudarCorHeader)
+document.addEventListener('scroll', mudarCorHeader);
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    let stream = document.querySelector('.carrossel-fluxo');
+    let items = document.querySelectorAll('.carrossel-card');
+
+    const prev = document.querySelector('.carrossel-anterior');
+    prev.addEventListener('click', function() {
+        stream.insertBefore(items[items.length - 1], items[0]);
+        items = document.querySelectorAll('.carrossel-card');
+    });
+
+    const next = document.querySelector('.carrossel-proximo');
+    next.addEventListener('click', function() {
+        stream.appendChild(items[0]);
+        items = document.querySelectorAll('.carrossel-card');
+    });
+});
