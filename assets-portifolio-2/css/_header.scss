@@ -4,6 +4,7 @@ header {
     height: 75px;
     @include flex(space-around, center);
     padding-top: 10px;
+    z-index: 5;
 
     .header-logo img{
         display: block;
