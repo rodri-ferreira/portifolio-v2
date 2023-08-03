@@ -15,7 +15,7 @@ const mudarCorHeader = () => {
         if(widthTela <  768) {
             nav.style.backgroundColor = "#f9f9f9";
             nav.style.boxShadow = "0 1px 4px 0 rgba(0, 0, 0, 0.5)";
-        };
+        }
         header.style.boxShadow = "0 1px 4px 0 rgba(0, 0, 0, 0.5)"
         header.style.transition = "0.5s"
         header.style.backgroundColor = "#fefefe";
@@ -25,6 +25,7 @@ const mudarCorHeader = () => {
             nav.style.backgroundColor = "#ffffff";
         } else {
             nav.style.backgroundColor = "transparent";
+            nav.style.boxShadow = "none"
         }
         header.style.boxShadow = "none"
         header.style.transition = "0.5s"
