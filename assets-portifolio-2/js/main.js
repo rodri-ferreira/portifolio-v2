@@ -52,3 +52,38 @@ document.addEventListener('DOMContentLoaded', function() {
         items = document.querySelectorAll('.carrossel-card');
     });
 });
+
+// hover do botão projetos
+const cardProjeto = document.querySelectorAll('.projeto-img');
+const btnProjeto = document.querySelectorAll('.btn-projeto');
+
+cardProjeto.forEach((e, i)=> {
+    e.addEventListener('mouseover', ()=> {
+        e.style.opacity = ".5"
+        btnProjeto[i].style.display='block'
+    })
+
+    e.addEventListener('mouseout', ()=> {
+        e.style.opacity = "1"
+        btnProjeto[i].style.display='none'
+    })
+})
+
+btnProjeto.forEach((e, i)=> {
+    e.addEventListener('mouseover', ()=> {
+        e.style.display="block"
+        cardProjeto[i].style.opacity = ".5"        
+    })
+
+    e.addEventListener("click", () => {
+        const modal = document.querySelector('.projeto-dialog');
+        modal.setAttribute("open")
+        console.log("vai tomar no cu ")
+    })
+})
+
+// modal
+
+
+
+
