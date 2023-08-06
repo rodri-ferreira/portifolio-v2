@@ -1,5 +1,7 @@
 const btnMenu = document.querySelector('.header-btn_menu');
 const nav = document.querySelector('.header-nav-ul');
+const fecharModal = document.querySelector(".btn-fechar");
+const modal = document.querySelector('.projeto-dialog');
 
 btnMenu.addEventListener('click', () => {
     mudarCorHeader()
@@ -75,11 +77,19 @@ btnProjeto.forEach((e, i)=> {
         cardProjeto[i].style.opacity = ".5"        
     })
 
-    e.addEventListener("click", () => {
-        const modal = document.querySelector('.projeto-dialog');
-        modal.setAttribute("open")
-        console.log("vai tomar no cu ")
+    e.addEventListener('mouseout', ()=> {
+        e.style.display="none"
+        cardProjeto[i].style.opacity = "1"        
     })
+
+    e.addEventListener("click", () => {
+        modal.show()
+
+    })
+})
+
+fecharModal.addEventListener('click', ()=> {
+    modal.close()
 })
 
 // modal

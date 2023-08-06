@@ -560,8 +560,8 @@ main {
   background-color: rgba(0, 0, 0, 0.3490196078);
 }
 .projeto-dialog .dialog-infos {
-  width: 50%;
-  height: 50%;
+  width: 70%;
+  height: 70%;
   background-color: #ffffff;
   position: relative;
   top: 50%;
@@ -571,4 +571,85 @@ main {
 
 .contato {
   height: 1000px;
+}
+
+.contato {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 40px;
+  height: calc(100vh - 75px);
+  background-color: #ffffff;
+}
+.contato .subtitulo-contato {
+  padding-bottom: 0;
+}
+.contato .contato-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contato .contato-div .contato-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  width: 400px;
+  margin: 30px 0 50px 0;
+}
+.contato .contato-div .contato-icons .icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+.contato .contato-div .contato-icons .icons i {
+  font-size: 60px;
+  cursor: pointer;
+}
+.contato .contato-div .contato-form {
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: column;
+}
+.contato .contato-div .contato-form .input-name-mail {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.contato .contato-div .contato-form .input-name-mail input {
+  width: 49%;
+}
+.contato .contato-div .contato-form input, .contato .contato-div .contato-form textarea {
+  border-bottom: 1px solid #222222;
+  width: 100%;
+}
+.contato .contato-div .contato-form input:focus, .contato .contato-div .contato-form textarea:focus {
+  outline: none;
+}
+.contato .contato-div .contato-form input {
+  height: 50px;
+}
+.contato .contato-div .contato-form textarea {
+  resize: none;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .contato {
+    padding: 30px;
+  }
+}
+#footer {
+  background-color: #222222;
+}
+#footer div {
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
