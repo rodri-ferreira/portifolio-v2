@@ -303,7 +303,7 @@ main {
     align-self: center;
   }
 }
-.carrossel-habilidades {
+.carrossel-cards .carrossel-habilidades {
   width: 100%;
   height: 50vh;
   max-height: 350px;
@@ -316,13 +316,11 @@ main {
   flex-direction: column;
   padding-top: 100px;
 }
-
-.carrossel-subtitulo {
+.carrossel-cards .carrossel-subtitulo {
   padding-top: 20px;
   padding-bottom: 0px;
 }
-
-.carrossel {
+.carrossel-cards .carrossel {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -330,7 +328,7 @@ main {
   overflow: hidden;
   padding-bottom: 40px;
 }
-.carrossel:before, .carrossel:after {
+.carrossel-cards .carrossel:before, .carrossel-cards .carrossel:after {
   display: block;
   content: "";
   position: absolute;
@@ -339,17 +337,17 @@ main {
   height: 100%;
   z-index: 3;
 }
-.carrossel:before {
+.carrossel-cards .carrossel:before {
   left: 0;
   top: 10%;
   height: 80%;
 }
-.carrossel:after {
+.carrossel-cards .carrossel:after {
   right: 0;
   top: 10%;
   height: 80%;
 }
-.carrossel .carrossel-fluxo {
+.carrossel-cards .carrossel .carrossel-fluxo {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -357,7 +355,7 @@ main {
   height: 100%;
   box-sizing: content-box;
 }
-.carrossel .carrossel-fluxo .carrossel-card {
+.carrossel-cards .carrossel .carrossel-fluxo .carrossel-card {
   position: absolute;
   width: 30%;
   max-width: 500px;
@@ -373,48 +371,48 @@ main {
   flex-direction: column;
   gap: 30px;
 }
-.carrossel .carrossel-fluxo .carrossel-card .card-img {
+.carrossel-cards .carrossel .carrossel-fluxo .carrossel-card .card-img {
   width: 100px;
 }
-.carrossel .carrossel-fluxo .carrossel-card .subtitulo-card {
+.carrossel-cards .carrossel .carrossel-fluxo .carrossel-card .subtitulo-card {
   text-align: center;
 }
-.carrossel .carrossel-fluxo .carrossel-card .texto-card {
+.carrossel-cards .carrossel .carrossel-fluxo .carrossel-card .texto-card {
   text-align: center;
   padding: 0 30px;
 }
-.carrossel .carrossel-fluxo .carrossel-card:nth-child(1) {
+.carrossel-cards .carrossel .carrossel-fluxo .carrossel-card:nth-child(1) {
   left: 0;
   z-index: 1;
   transform: translateX(-100%) scale(0.8);
 }
-.carrossel .carrossel-fluxo .carrossel-card:nth-child(2) {
+.carrossel-cards .carrossel .carrossel-fluxo .carrossel-card:nth-child(2) {
   left: 0;
   z-index: 2;
   transform: translateX(-50%) scale(0.8);
 }
-.carrossel .carrossel-fluxo .carrossel-card:nth-child(3) {
+.carrossel-cards .carrossel .carrossel-fluxo .carrossel-card:nth-child(3) {
   left: 32.5%;
   z-index: 4;
   transform: translateX(-50%) scale(1);
 }
-.carrossel .carrossel-fluxo .carrossel-card:nth-child(4) {
+.carrossel-cards .carrossel .carrossel-fluxo .carrossel-card:nth-child(4) {
   left: 68.5%;
   z-index: 4;
   transform: translateX(-50%) scale(1);
 }
-.carrossel .carrossel-fluxo .carrossel-card:nth-child(n+5) {
+.carrossel-cards .carrossel .carrossel-fluxo .carrossel-card:nth-child(n+5) {
   left: 100%;
   z-index: 2;
   transform: translateX(-50%) scale(0.8);
 }
-.carrossel .carrossel-fluxo .carrossel-card:nth-child(n+6) {
+.carrossel-cards .carrossel .carrossel-fluxo .carrossel-card:nth-child(n+6) {
   left: 100%;
   z-index: 1;
   transform: scale(0.8);
 }
-.carrossel .carrossel-proximo,
-.carrossel .carrossel-anterior {
+.carrossel-cards .carrossel .carrossel-proximo,
+.carrossel-cards .carrossel .carrossel-anterior {
   position: absolute;
   top: 50%;
   z-index: 4;
@@ -422,9 +420,9 @@ main {
   height: 100%;
   transform: translateX(-50%) translateY(-50%) scale(0.8);
 }
-.carrossel .carrossel-proximo #btn-proximo, .carrossel .carrossel-proximo #btn-anterior,
-.carrossel .carrossel-anterior #btn-proximo,
-.carrossel .carrossel-anterior #btn-anterior {
+.carrossel-cards .carrossel .carrossel-proximo #btn-proximo, .carrossel-cards .carrossel .carrossel-proximo #btn-anterior,
+.carrossel-cards .carrossel .carrossel-anterior #btn-proximo,
+.carrossel-cards .carrossel .carrossel-anterior #btn-anterior {
   position: absolute;
   font-size: 30px;
   top: 40%;
@@ -434,18 +432,18 @@ main {
   z-index: 10;
   cursor: pointer;
 }
-.carrossel .carrossel-proximo #btn-proximo,
-.carrossel .carrossel-anterior #btn-proximo {
+.carrossel-cards .carrossel .carrossel-proximo #btn-proximo,
+.carrossel-cards .carrossel .carrossel-anterior #btn-proximo {
   right: 60%;
 }
-.carrossel .carrossel-proximo #btn-anterior,
-.carrossel .carrossel-anterior #btn-anterior {
+.carrossel-cards .carrossel .carrossel-proximo #btn-anterior,
+.carrossel-cards .carrossel .carrossel-anterior #btn-anterior {
   left: 60%;
 }
-.carrossel .carrossel-anterior {
+.carrossel-cards .carrossel .carrossel-anterior {
   left: 0;
 }
-.carrossel .carrossel-proximo {
+.carrossel-cards .carrossel .carrossel-proximo {
   left: 100%;
 }
 
@@ -528,6 +526,7 @@ main {
   flex-grow: 1;
   position: relative;
   background-color: black;
+  border: 1px solid #222222;
   border-radius: 15px;
 }
 .projetos .projetos-desenvolvidos .projetos-card .projeto-img {
@@ -536,6 +535,7 @@ main {
   width: 100%;
   height: 100%;
   transition: 0.5s;
+  border-radius: 15px;
 }
 .projetos .projetos-desenvolvidos .projetos-card .btn-projeto {
   display: block;
