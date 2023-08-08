@@ -20,6 +20,7 @@ $corPrincipalTexto: #3d3d3d;
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 30px;
 }
 
 a {
@@ -42,7 +43,7 @@ button {
 }
 
 .ativar-menu {
-    height: 245px !important;
+    height: 210px !important;
     transition: 0.5s;
 }
 

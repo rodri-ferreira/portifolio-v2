@@ -1,47 +1,51 @@
 import {imagens, subtitulos, textos, deployLinks} from './infosProjetos.js'
 
-
-
 const btnMenu = document.querySelector('.header-btn_menu');
 const nav = document.querySelector('.header-nav-ul');
 const fecharModal = document.querySelector(".btn-fechar");
 const modal = document.querySelector('.projeto-dialog');
 
+//header menu nav
 btnMenu.addEventListener('click', () => {
-    mudarCorHeader()
     nav.classList.toggle('ativar-menu');
+    mudarCorHeader();
 })
 
 const mudarCorHeader = () => {
     const header = document.getElementById('header');
     const scrollPosition = window.scrollY;
-    const widthTela = window.innerWidth;
     
     if(scrollPosition > 40) {
-        if(widthTela <  768) {
-            nav.style.backgroundColor = "#f9f9f9";
-            nav.style.boxShadow = "0 1px 4px 0 rgba(0, 0, 0, 0.5)";
-        }
         header.style.boxShadow = "0 1px 4px 0 rgba(0, 0, 0, 0.5)"
         header.style.transition = "0.5s"
         header.style.backgroundColor = "#fefefe";
         btnMenu.style.backgroundColor = "transparent";
     } else {    
-        if(widthTela <  768) {
-            nav.style.backgroundColor = "#ffffff";
-        } else {
-            nav.style.backgroundColor = "transparent";
-            nav.style.boxShadow = "none"
-        }
         header.style.boxShadow = "none"
         header.style.transition = "0.5s"
         header.style.backgroundColor = "#ffffff";
     }
 }
 
+const verificarTamanhoJanela = () => {
+    return window.innerWidth;   
+}
+
+window.addEventListener("resize", () => {
+    const larguraJanela = verificarTamanhoJanela() 
+    if(larguraJanela > 768) {
+        nav.style.backgroundColor = "transparent";
+        nav.style.boxShadow = "none"
+    } else {
+        nav.style.backgroundColor = "#f9f9f9";
+        nav.style.boxShadow = "0 1px 4px 0 rgba(0, 0, 0, 0.5)";
+    }
+})
+
 document.addEventListener('scroll', mudarCorHeader);
+//header menu nav
 
-
+//carrossel
 document.addEventListener('DOMContentLoaded', function() {
     let stream = document.querySelector('.carrossel-fluxo');
     let items = document.querySelectorAll('.carrossel-card');
@@ -59,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// hover do botão projetos
 const cardProjeto = document.querySelectorAll('.projeto-img');
 const btnProjeto = document.querySelectorAll('.btn-projeto');
 
@@ -89,14 +92,15 @@ btnProjeto.forEach((e, i)=> {
     e.addEventListener("click", (evento) => {
         modal.show()
         mostrarInfosDinamicasModal(evento)
-
     })
 })
 
 fecharModal.addEventListener('click', ()=> {
     modal.close()
 })
+//carrossel
 
+//dialog dinamico
 const mostrarInfosDinamicasModal = (evento) => {
     const imgDiaglog = document.querySelector('.img-dialog');
     const subtitulosDialog = document.querySelector('.subtitulo-projetos-dialog');
@@ -109,7 +113,4 @@ const mostrarInfosDinamicasModal = (evento) => {
     textoDialog.textContent= textos[atributoIndex];
     btnLinks.href = deployLinks[atributoIndex];
 }
-
-
-
-
+//dialog dinamico

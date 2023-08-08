@@ -5,6 +5,7 @@ header {
     @include flex(space-around, center);
     padding-top: 10px;
     z-index: 5;
+    background-color: $corPrincipalLight;
 
     .header-logo img{
         display: block;
@@ -15,7 +16,7 @@ header {
     .header-nav {
         @include flex(space-around, center);
         gap: 40px;
-        
+
         .header-nav-ul {
             @include flex(space-around, center);
             gap: 25px;
