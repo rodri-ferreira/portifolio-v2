@@ -1,3 +1,7 @@
+import {imagens, subtitulos, textos, deployLinks} from './infosProjetos.js'
+
+
+
 const btnMenu = document.querySelector('.header-btn_menu');
 const nav = document.querySelector('.header-nav-ul');
 const fecharModal = document.querySelector(".btn-fechar");
@@ -82,8 +86,9 @@ btnProjeto.forEach((e, i)=> {
         cardProjeto[i].style.opacity = "1"        
     })
 
-    e.addEventListener("click", () => {
+    e.addEventListener("click", (evento) => {
         modal.show()
+        mostrarInfosDinamicasModal(evento)
 
     })
 })
@@ -92,7 +97,18 @@ fecharModal.addEventListener('click', ()=> {
     modal.close()
 })
 
-// modal
+const mostrarInfosDinamicasModal = (evento) => {
+    const imgDiaglog = document.querySelector('.img-dialog');
+    const subtitulosDialog = document.querySelector('.subtitulo-projetos-dialog');
+    const textoDialog = document.querySelector('.texto-projetos-dialog');
+    const atributoIndex = evento.target.getAttribute('data-index');
+    const btnLinks = document.querySelector('.deploy-link')
+    
+    imgDiaglog.src = imagens[atributoIndex];
+    subtitulosDialog.textContent = subtitulos[atributoIndex];
+    textoDialog.textContent= textos[atributoIndex];
+    btnLinks.href = deployLinks[atributoIndex];
+}
 
 
 

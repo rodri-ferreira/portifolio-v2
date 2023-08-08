@@ -1,5 +1,8 @@
 .sobre-mim {
     background-color: $corPrincipalLight;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
     .sobre-mim_div {
         padding: 20px 0;

@@ -49,7 +49,7 @@ button {
 .subtitulo {
   text-align: center;
   font-size: 36px;
-  padding: 20px 0;
+  padding-top: 60px;
   background-color: #ffffff;
 }
 
@@ -236,6 +236,9 @@ main {
 }
 .sobre-mim {
   background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .sobre-mim .sobre-mim_div {
   padding: 20px 0;
@@ -303,7 +306,7 @@ main {
     align-self: center;
   }
 }
-.carrossel-cards .carrossel-habilidades {
+.carrossel-habilidades {
   width: 100%;
   height: 50vh;
   max-height: 350px;
@@ -316,11 +319,12 @@ main {
   flex-direction: column;
   padding-top: 100px;
 }
-.carrossel-cards .carrossel-subtitulo {
-  padding-top: 20px;
+
+.carrossel-subtitulo {
   padding-bottom: 0px;
 }
-.carrossel-cards .carrossel {
+
+.carrossel {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -328,7 +332,7 @@ main {
   overflow: hidden;
   padding-bottom: 40px;
 }
-.carrossel-cards .carrossel:before, .carrossel-cards .carrossel:after {
+.carrossel:before, .carrossel:after {
   display: block;
   content: "";
   position: absolute;
@@ -337,17 +341,17 @@ main {
   height: 100%;
   z-index: 3;
 }
-.carrossel-cards .carrossel:before {
+.carrossel:before {
   left: 0;
   top: 10%;
   height: 80%;
 }
-.carrossel-cards .carrossel:after {
+.carrossel:after {
   right: 0;
   top: 10%;
   height: 80%;
 }
-.carrossel-cards .carrossel .carrossel-fluxo {
+.carrossel .carrossel-fluxo {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -355,7 +359,7 @@ main {
   height: 100%;
   box-sizing: content-box;
 }
-.carrossel-cards .carrossel .carrossel-fluxo .carrossel-card {
+.carrossel .carrossel-fluxo .carrossel-card {
   position: absolute;
   width: 30%;
   max-width: 500px;
@@ -371,48 +375,48 @@ main {
   flex-direction: column;
   gap: 30px;
 }
-.carrossel-cards .carrossel .carrossel-fluxo .carrossel-card .card-img {
+.carrossel .carrossel-fluxo .carrossel-card .card-img {
   width: 100px;
 }
-.carrossel-cards .carrossel .carrossel-fluxo .carrossel-card .subtitulo-card {
+.carrossel .carrossel-fluxo .carrossel-card .subtitulo-card {
   text-align: center;
 }
-.carrossel-cards .carrossel .carrossel-fluxo .carrossel-card .texto-card {
+.carrossel .carrossel-fluxo .carrossel-card .texto-card {
   text-align: center;
   padding: 0 30px;
 }
-.carrossel-cards .carrossel .carrossel-fluxo .carrossel-card:nth-child(1) {
+.carrossel .carrossel-fluxo .carrossel-card:nth-child(1) {
   left: 0;
   z-index: 1;
   transform: translateX(-100%) scale(0.8);
 }
-.carrossel-cards .carrossel .carrossel-fluxo .carrossel-card:nth-child(2) {
+.carrossel .carrossel-fluxo .carrossel-card:nth-child(2) {
   left: 0;
   z-index: 2;
   transform: translateX(-50%) scale(0.8);
 }
-.carrossel-cards .carrossel .carrossel-fluxo .carrossel-card:nth-child(3) {
+.carrossel .carrossel-fluxo .carrossel-card:nth-child(3) {
   left: 32.5%;
   z-index: 4;
   transform: translateX(-50%) scale(1);
 }
-.carrossel-cards .carrossel .carrossel-fluxo .carrossel-card:nth-child(4) {
+.carrossel .carrossel-fluxo .carrossel-card:nth-child(4) {
   left: 68.5%;
   z-index: 4;
   transform: translateX(-50%) scale(1);
 }
-.carrossel-cards .carrossel .carrossel-fluxo .carrossel-card:nth-child(n+5) {
+.carrossel .carrossel-fluxo .carrossel-card:nth-child(n+5) {
   left: 100%;
   z-index: 2;
   transform: translateX(-50%) scale(0.8);
 }
-.carrossel-cards .carrossel .carrossel-fluxo .carrossel-card:nth-child(n+6) {
+.carrossel .carrossel-fluxo .carrossel-card:nth-child(n+6) {
   left: 100%;
   z-index: 1;
   transform: scale(0.8);
 }
-.carrossel-cards .carrossel .carrossel-proximo,
-.carrossel-cards .carrossel .carrossel-anterior {
+.carrossel .carrossel-proximo,
+.carrossel .carrossel-anterior {
   position: absolute;
   top: 50%;
   z-index: 4;
@@ -420,9 +424,9 @@ main {
   height: 100%;
   transform: translateX(-50%) translateY(-50%) scale(0.8);
 }
-.carrossel-cards .carrossel .carrossel-proximo #btn-proximo, .carrossel-cards .carrossel .carrossel-proximo #btn-anterior,
-.carrossel-cards .carrossel .carrossel-anterior #btn-proximo,
-.carrossel-cards .carrossel .carrossel-anterior #btn-anterior {
+.carrossel .carrossel-proximo #btn-proximo, .carrossel .carrossel-proximo #btn-anterior,
+.carrossel .carrossel-anterior #btn-proximo,
+.carrossel .carrossel-anterior #btn-anterior {
   position: absolute;
   font-size: 30px;
   top: 40%;
@@ -432,18 +436,18 @@ main {
   z-index: 10;
   cursor: pointer;
 }
-.carrossel-cards .carrossel .carrossel-proximo #btn-proximo,
-.carrossel-cards .carrossel .carrossel-anterior #btn-proximo {
+.carrossel .carrossel-proximo #btn-proximo,
+.carrossel .carrossel-anterior #btn-proximo {
   right: 60%;
 }
-.carrossel-cards .carrossel .carrossel-proximo #btn-anterior,
-.carrossel-cards .carrossel .carrossel-anterior #btn-anterior {
+.carrossel .carrossel-proximo #btn-anterior,
+.carrossel .carrossel-anterior #btn-anterior {
   left: 60%;
 }
-.carrossel-cards .carrossel .carrossel-anterior {
+.carrossel .carrossel-anterior {
   left: 0;
 }
-.carrossel-cards .carrossel .carrossel-proximo {
+.carrossel .carrossel-proximo {
   left: 100%;
 }
 
@@ -507,7 +511,7 @@ main {
   }
 }
 .projetos {
-  margin-top: 330px;
+  margin-top: 350px;
   background-color: #ffffff;
 }
 .projetos .sub-portifolio {
@@ -563,10 +567,40 @@ main {
   width: 70%;
   height: 70%;
   background-color: #ffffff;
+  border-radius: 15px;
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.projeto-dialog .dialog-infos .dialog-info-div {
+  display: flex;
+  padding: 70px 0 70px 70px;
+  align-items: center;
+  justify-content: center;
+}
+.projeto-dialog .dialog-infos .dialog-info-div .img-btn-projeto img {
+  width: 250px;
+  border: 1px solid #222222;
+  border-radius: 15px;
+}
+.projeto-dialog .dialog-infos .dialog-info-div .infos-projeto h3 {
+  margin: 30px 0 30px 0;
+  text-align: center;
+}
+.projeto-dialog .dialog-infos .dialog-info-div .infos-projeto p {
+  width: 70%;
+  text-align: justify;
+  margin: 0 auto;
+}
+.projeto-dialog .dialog-infos .dialog-info-div .infos-projeto .btns-dialog {
+  padding: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
 .contato {
@@ -577,12 +611,12 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-top: 40px;
   height: calc(100vh - 75px);
+  margin-bottom: 30px;
   background-color: #ffffff;
 }
 .contato .subtitulo-contato {
-  padding-bottom: 0;
+  padding: 0;
 }
 .contato .contato-div {
   display: flex;
@@ -642,6 +676,11 @@ main {
 @media screen and (max-width: 768px) {
   .contato {
     padding: 30px;
+  }
+}
+@media screen and (max-height: 657px) and (max-width: 992px) {
+  .contato {
+    padding-top: 150px;
   }
 }
 #footer {
