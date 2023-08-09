@@ -3,38 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets-portifolio-2/img/icons8-desenvolvedor-16.png" type="image/x-icon">
     <title>Dev Rodrigo</title>
     <meta name="description" content="Meu protifólio pessoal!">
     <link rel="stylesheet" href="assets-portifolio-2/css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <script src="assets-portifolio-2/js/main.js" type="module" defer ></script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5DQPQKP');</script>
+    <!-- End Google Tag Manager -->
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DQPQKP"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <header id="header">   
         <h1 class="header-logo">
-            <a href="#"><img src="assets-portifolio-2/img/logo-white.svg" alt="Logo do site portifólio" title="Logo Rodrigo Ferreira"></a>
+            <a href="#" aria-label="ir para home da página"><img src="assets-portifolio-2/img/logo-white.svg" alt="Logo do site portifólio" title="Logo Rodrigo Ferreira"></a>
         </h1>
         <nav class="header-nav">
             <ul class="header-nav-ul">
-                <li><a href="#" class="header-ul-a">home</a></li>
-                <li><a href="#sobre" class="header-ul-a">sobre</a></li>
-                <li><a href="#tecnologias" class="header-ul-a">tecnologias</a></li>
-                <li><a href="#portifolio" class="header-ul-a">portifólio</a></li>
-                <li><a href="#contato" class="header-ul-a">contato</a></li>
+                <li><a href="#" class="header-ul-a" aria-label="ir para home da página">home</a></li>
+                <li><a href="#sobre" class="header-ul-a" aria-label="ir para sobre da página">sobre</a></li>
+                <li><a href="#tecnologias" class="header-ul-a" aria-label="ir para tecnologias da página">tecnologias</a></li>
+                <li><a href="#portifolio" class="header-ul-a" aria-label="ir para projetos da página">portifólio</a></li>
+                <li><a href="#contato" class="header-ul-a" aria-label="ir para contatos da página">contato</a></li>
             </ul>
-            <button class="header-btn_menu"><i class="bi bi-list"></i></button>
+            <button class="header-btn_menu" aria-label="ativar menu">
+                <i class="bi bi-list"></i>
+            </button>
         </nav>
     </header>
 
     <section class="inicial">
         <section class="inicial-texto-icons">   
             <section class="inicial-icons">
-                <a href="https://github.com/rodri-ferreira" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://github.com/rodri-ferreira" aria-label="acessar github do Rodrigo" target="_blank"><i class="bi bi-github"></i></a>
 
-                <a href="https://www.linkedin.com/in/rodrigo-ferreira-5b43941a3/" target="_blank"><i class="bi bi-linkedin"></i></a> 
+                <a href="https://www.linkedin.com/in/rodrigo-ferreira-5b43941a3/" aria-label="acessar linkedin do Rodrigo" target="_blank"><i class="bi bi-linkedin"></i></a> 
 
-                <a href="https://api.whatsapp.com/send/?phone=5511950733107&text=Vi+seu+portif%C3%B3lio+e+achei+legal%21&type=phone_number&app_absent=0" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=5511950733107&text=Vi+seu+portif%C3%B3lio+e+achei+legal%21&type=phone_number&app_absent=0" aria-label="acessar whatsapp do Rodrigo" target="_blank"><i class="bi bi-whatsapp"></i></a>
             </section>
 
             <section class="inicial-texto">
@@ -45,7 +61,7 @@
                     estou me preparando para me tornar um desenvolvedor front-end. Com uma paixão pela criação de interfaces de usuário interativas e atraentes, estou em constante busca por aprimorar minhas habilidades em HTML, CSS e JavaScript.
                 </p>
                 <a href="assets-portifolio-2/pdf/CV Rodrigo Ferreira.pdf" download class="btn-inicial">
-                    <button class="btn-padrao">
+                    <button class="btn-padrao" aria-label="Baixar currículo">
                         Download CV
                     </button>
                 </a>
@@ -57,7 +73,7 @@
     </section>
 
     <section class="sobre-mim">
-        <a href="#"id="sobre"></a>
+        <a href="#"id="sobre" aria-label="ancora seção sobre"></a>
         <h2 class="subtitulo">Sobre mim</h2>
         <div class="sobre-mim_div">
             <img src="assets-portifolio-2/img/ilustracao-dev.svg" alt="imagem de uma ilustração de um computador grande com duas pessoas" class="sobre-mim_img">
@@ -83,8 +99,8 @@
                 </div>
 
                 <a href="assets-portifolio-2/pdf/CV Rodrigo Ferreira.pdf" download>
-                    <button class="btn-padrao btn-inicial">
-                    Download CV
+                    <button class="btn-padrao btn-inicial" aria-label="Baixar currículo">
+                        Download CV
                     </button>
                 </a>
             </div>
@@ -92,7 +108,7 @@
     </section>
     
     <section class="carrossel-cards">
-        <a href="#"id="tecnologias"></a>
+        <a href="#"id="tecnologias" aria-label="ancora seção tecnologias"></a>
         <h2 class="subtitulo carrossel-subtitulo">Tecnologias</h2>
         <h3 class="subtitulo-h3">Algumas tecnologias que tenho conhecimento</h3>
         <section class="carrossel-habilidades">
@@ -102,17 +118,17 @@
 
                 <div class="carrossel-fluxo">
                     <div class="carrossel-card">
-                        <img src="assets-portifolio-2/img/sass.svg" alt="Icone da tecnologia html" class="card-img">
+                        <img src="assets-portifolio-2/img/sass.svg" alt="Icone da tecnologia sass css" class="card-img">
                         <h3 class="subtitulo-card">Sass</h3>
                         <p class="texto-card">Sass é uma superconjunto de CSS que pode tornar o desenvolvimento de CSS mais rápido e fácil.</p>
                     </div>
                     <div class="carrossel-card">
-                        <img src="assets-portifolio-2/img/bootstrap.svg" alt="Icone da tecnologia html" class="card-img">
+                        <img src="assets-portifolio-2/img/bootstrap.svg" alt="Icone da tecnologia bootstrap" class="card-img">
                         <h3 class="subtitulo-card">Bootstrap</h3>
                         <p class="texto-card">Bootstrap é um framework de front-end que ajuda você a criar sites e aplicativos da web rapidamente e facilmente.</p>
                     </div>
                     <div class="carrossel-card">
-                        <img src="assets-portifolio-2/img/figma.svg" alt="Icone da tecnologia html" class="card-img">
+                        <img src="assets-portifolio-2/img/figma.svg" alt="Icone da tecnologia Figma" class="card-img">
                         <h3 class="subtitulo-card">Figma</h3>
                         <p class="texto-card">Figma é uma ferramenta de design colaborativo para criar e compartilhar projetos de design em tempo real.</p>
                     </div>
@@ -122,27 +138,27 @@
                         <p class="texto-card">HTML é uma linguagem de marcação de textos usada para criar páginas da web.</p>
                     </div>
                     <div class="carrossel-card">
-                        <img src="assets-portifolio-2/img/css.svg" alt="Icone da tecnologia html" class="card-img">
+                        <img src="assets-portifolio-2/img/css.svg" alt="Icone da tecnologia css" class="card-img">
                         <h3 class="subtitulo-card">Css</h3>
                         <p class="texto-card">CSS é uma linguagem usada para controlar a aparência de páginas da web.</p>
                     </div>
                     <div class="carrossel-card">
-                        <img src="assets-portifolio-2/img/javascript.svg" alt="Icone da tecnologia html" class="card-img">
+                        <img src="assets-portifolio-2/img/javascript.svg" alt="Icone da tecnologia javascript" class="card-img">
                         <h3 class="subtitulo-card">JavaScript</h3>
                         <p class="texto-card">JavaScript é uma linguagem de programação usada para adicionar interatividade às páginas da web.</p>
                     </div>
                     <div class="carrossel-card">
-                        <img src="assets-portifolio-2/img/react.svg" alt="Icone da tecnologia html" class="card-img">
+                        <img src="assets-portifolio-2/img/react.svg" alt="Icone da tecnologia react" class="card-img">
                         <h3 class="subtitulo-card">React</h3>
                         <p class="texto-card">React é uma biblioteca de JavaScript usada para criar interfaces de usuário (UI) de aplicativos web</p>
                     </div>
                     <div class="carrossel-card">
-                        <img src="assets-portifolio-2/img/git.svg" alt="Icone da tecnologia html" class="card-img">
+                        <img src="assets-portifolio-2/img/git.svg" alt="Icone da tecnologia git" class="card-img">
                         <h3 class="subtitulo-card">Git</h3>
                         <p class="texto-card">Git é um sistema de controle de versão descentralizado usado para gerenciar projetos de software.</p>
                     </div>
                     <div class="carrossel-card">
-                        <img src="assets-portifolio-2/img/wordpress.svg" alt="Icone da tecnologia html" class="card-img">
+                        <img src="assets-portifolio-2/img/wordpress.svg" alt="Icone da tecnologia wordpress" class="card-img">
                         <h3 class="subtitulo-card">wordpress</h3>
                         <p class="texto-card">Wordpress é uma plataforma popular para sites e blogs de personalização fácil</p>
                     </div>
@@ -152,48 +168,48 @@
     </section>
 
     <section class="projetos">
-        <a href="#"id="portifolio"></a>
+        <a href="#"id="portifolio" aria-label="ancora seção portifólio"></a>
         <h2 class="subtitulo sub-portifolio">Portifólio</h2>
 
         <div class="projetos-desenvolvidos">
             <div class="projetos-card">
-                <img src="assets-portifolio-2/img/calculadora 1.svg" alt="" class="projeto-img">
+                <img src="assets-portifolio-2/img/calculadora 1.svg" alt="Imagem do projeto calculadora" class="projeto-img">
 
                 <button class="btn-padrao btn-projeto" data-index="0"> Ver sobre</button>
             </div>
 
             <div class="projetos-card">
-                <img src="assets-portifolio-2/img/memoria-projeto.svg" alt="" class="projeto-img">
+                <img src="assets-portifolio-2/img/memoria-projeto.svg" alt="Imagem do projeto jogo da memoria" class="projeto-img">
 
                 <button class="btn-padrao btn-projeto" data-index="1"> Ver sobre</button>
             </div>
             <div class="projetos-card">
-                <img src="assets-portifolio-2/img/crud-js-projeto.svg" alt="" class="projeto-img">
+                <img src="assets-portifolio-2/img/crud-js-projeto.svg" alt="Imagem do projeto crud feito em js" class="projeto-img">
 
                 <button class="btn-padrao btn-projeto" data-index="2"> Ver sobre</button>
             </div>
             <div class="projetos-card">
-                <img src="assets-portifolio-2/img/mata-mosquito-projeto.svg" alt="" class="projeto-img">
+                <img src="assets-portifolio-2/img/mata-mosquito-projeto.svg" alt="Imagem do projeto jogo mata mosquito" class="projeto-img">
 
                 <button class="btn-padrao btn-projeto" data-index="3"> Ver sobre</button>
             </div>
             <div class="projetos-card">
-                <img src="assets-portifolio-2/img/museu.svg" alt="" class="projeto-img">
+                <img src="assets-portifolio-2/img/museu.svg" alt="Imagem do projeto museu nacional" class="projeto-img">
 
                 <button class="btn-padrao btn-projeto" data-index="4"> Ver sobre</button>
             </div>
             <div class="projetos-card">
-                <img src="assets-portifolio-2/img/buscador-cep-projeto.svg" alt="" class="projeto-img">
+                <img src="assets-portifolio-2/img/buscador-cep-projeto.svg" alt="Imagem do projeto buscador de cep" class="projeto-img">
 
                 <button class="btn-padrao btn-projeto" data-index="5"> Ver sobre</button>
             </div>
             <div class="projetos-card card-7">
-                <img src="assets-portifolio-2/img/build-con-projeto.svg" alt="" class="projeto-img">
+                <img src="assets-portifolio-2/img/build-con-projeto.svg" alt="Imagem do projeto feito em bootstrap buildcon" class="projeto-img">
 
                 <button class="btn-padrao btn-projeto" data-index="6"> Ver sobre</button>
             </div>
             <div class="projetos-card card-8">
-                <img src="assets-portifolio-2/img/vitorianna-projeto.svg" alt="" class="projeto-img">
+                <img src="assets-portifolio-2/img/vitorianna-projeto.svg" alt="Imagem do projeto lp-vitorianna" class="projeto-img">
 
                 <button class="btn-padrao btn-projeto" data-index="7"> Ver sobre</button>
             </div>
@@ -203,7 +219,7 @@
             <div class="dialog-infos">
                 <div class="dialog-info-div">
                     <div class="img-btn-projeto">
-                        <img src="" alt="" class="img-dialog">
+                        <img src="" alt="Imagem do projeto selecionado" class="img-dialog">
                     </div>
 
                     <div class="infos-projeto">
@@ -211,7 +227,7 @@
                         <p class="texto-projetos-dialog"></p>
 
                         <div class="btns-dialog">
-                            <a href="" target="_blank" class="deploy-link"><button class="btn-padrao btn-deploy">Deploy</button></a>
+                            <a href="#" target="_blank" class="deploy-link"><button class="btn-padrao btn-deploy">Deploy</button></a>
                             <button class="btn-fechar btn-padrao">Fechar</button>
                         </div>
                     </div>
@@ -222,24 +238,24 @@
     </section>
 
     <section class="contato">
-        <a href="#"id="contato"></a>
+        <a href="#"id="contato" aria-label="ancora seção contato"></a>
         <h2 class="subtitulo subtitulo-contato">Contato</h2>
         <h3 class="subtitulo-h3">Bora bater um papo? Entre em contato</h3>
 
         <div class="contato-div">
             <div class="contato-icons">
                 <div class="icons">
-                    <a href="https://github.com/rodri-ferreira" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="https://github.com/rodri-ferreira" aria-label="acessar github do Rodrigo"  target="_blank"><i class="bi bi-github"></i></a>
 
-                    <a href="https://www.linkedin.com/in/rodrigo-ferreira-5b43941a3/" target="_blank"><i class="bi bi-linkedin"></i></a> 
+                    <a href="https://www.linkedin.com/in/rodrigo-ferreira-5b43941a3/" aria-label="acessar linkedin do Rodrigo"  target="_blank"><i class="bi bi-linkedin"></i></a> 
 
-                    <a href="https://api.whatsapp.com/send/?phone=5511950733107&text=Vi+seu+portif%C3%B3lio+e+achei+legal%21&type=phone_number&app_absent=0" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=5511950733107&text=Vi+seu+portif%C3%B3lio+e+achei+legal%21&type=phone_number&app_absent=0" aria-label="acessar whatsapp do Rodrigo"  target="_blank"><i class="bi bi-whatsapp"></i></a>
                 </div>
 
                 <span>(11) 95073-3107</span>
 
                 <a href="assets-portifolio-2/pdf/CV Rodrigo Ferreira.pdf" download>
-                    <button class="btn-padrao btn-inicial">
+                    <button class="btn-padrao btn-inicial" aria-label="Baixar currículo">
                         Download CV
                     </button>
                 </a>
@@ -252,7 +268,7 @@
                 </div>
                 <input type="text" name="assunto" placeholder="Assunto">
                 <textarea name="mensagem" id="" cols="20" rows="5" placeholder="Mensagem"></textarea>
-                <button type="submit" class="btn-padrao"> Enviar</button>
+                <button type="submit" class="btn-padrao" aria-label="Enviar Email"> Enviar</button>
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="https://devrodrigo.com.br/obrigado.html">
             </form>
