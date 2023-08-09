@@ -4,6 +4,7 @@ const btnMenu = document.querySelector('.header-btn_menu');
 const nav = document.querySelector('.header-nav-ul');
 const fecharModal = document.querySelector(".btn-fechar");
 const modal = document.querySelector('.projeto-dialog');
+const btnLinkMenu = document.querySelectorAll('.header-ul-a');
 
 //header menu nav
 btnMenu.addEventListener('click', () => {
@@ -43,6 +44,12 @@ window.addEventListener("resize", () => {
 })
 
 document.addEventListener('scroll', mudarCorHeader);
+
+btnLinkMenu.forEach((e) => {
+    e.addEventListener('click', ()=> {
+        nav.classList.remove('ativar-menu');
+    })
+})
 //header menu nav
 
 //carrossel

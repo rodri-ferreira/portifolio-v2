@@ -277,9 +277,6 @@ header .header-nav .header-btn_menu {
   padding: 5px 0;
   font-size: 14px;
 }
-.sobre-mim .sobre-mim_div .sobre-mim_conteudo .btn-sobre_mim {
-  padding: 10px;
-}
 
 @media screen and (max-width: 992px) {
   .sobre-mim .sobre-mim_div {
@@ -562,8 +559,8 @@ header .header-nav .header-btn_menu {
   background-color: rgba(0, 0, 0, 0.3490196078);
 }
 .projeto-dialog .dialog-infos {
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
   background-color: #ffffff;
   border-radius: 15px;
   position: relative;
@@ -576,9 +573,9 @@ header .header-nav .header-btn_menu {
 }
 .projeto-dialog .dialog-infos .dialog-info-div {
   display: flex;
-  padding: 70px 0 70px 70px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  padding: 70px 0 70px 70px;
 }
 .projeto-dialog .dialog-infos .dialog-info-div .img-btn-projeto img {
   width: 250px;
@@ -601,6 +598,18 @@ header .header-nav .header-btn_menu {
   justify-content: center;
 }
 
+@media screen and (max-width: 1200px) {
+  .projeto-dialog .dialog-infos .dialog-info-div {
+    flex-direction: column;
+    padding: 30px 0 0 0;
+  }
+  .projeto-dialog .dialog-infos .dialog-info-div .img-btn-projeto img {
+    width: 200px;
+  }
+  .projeto-dialog .dialog-infos .dialog-info-div .infos-projeto p {
+    width: 90%;
+  }
+}
 .contato {
   height: 1000px;
 }
